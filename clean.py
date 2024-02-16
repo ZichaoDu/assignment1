@@ -20,3 +20,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     cleaned = clean(args.input_file1,args.input_file2)
     cleaned.to_csv(args.output_file, index=False)
+
+    print("Output file shape:", cleaned.shape)
